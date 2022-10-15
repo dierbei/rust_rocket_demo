@@ -5,7 +5,7 @@ use serde::{Serialize, Deserialize};
 // use rocket::http::ContentType;
 
 // serde参考文档：https://serde.rs/variant-attrs.html
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Debug)]
 pub struct User {
     #[serde(rename(serialize = "uid", deserialize = "id"))]
     pub id: i32,
